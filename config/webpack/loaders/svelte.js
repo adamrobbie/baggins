@@ -3,7 +3,8 @@ module.exports = {
   use: [{
     loader: 'svelte-loader',
     options: {
-      hotReload: false
+      hotReload: true,
+      preprocess: require('svelte-preprocess')({})
     }
   }],
 }
